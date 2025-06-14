@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Practice</title>
+  <style>
+    /* 1. Element Selector */
+    h1 {
+      color: darkblue;
+      text-align: center;
+    }
+
+    /* 2. ID Selector */
+    #special-paragraph {
+      color: green;
+      font-weight: bold;
+    }
+
+    /* 3. Class Selector */
+    .highlight {
+      background-color: yellow;
+    }
+
+    /* 4. Descendant Combinator (space) */
+    div p {
+      color: purple;
+    }
+
+    /* 5. Child Combinator (>) */
+    ul > li {
+      color: red;
+    }
+
+    /* 6. Adjacent Sibling Combinator (+) */
+    h2 + p {
+      font-style: italic;
+    }
+
+    /* 7. General Sibling Combinator (~) */
+    .box ~ p {
+      color: brown;
+    }
+
+    /* 8. Attribute Selector */
+    input[type="text"] {
+      border: 2px solid blue;
+    }
+
+    /* 9. Grouping Selector */
+    h3, h4 {
+      text-decoration: underline;
+    }
+
+    /* 10. Pseudo-class */
+    a:hover {
+      color: orange;
+    }
+
+    /* 11. Pseudo-element */
+    p::first-letter {
+      font-size: 200%;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Selectors Practice</h1>
+
+  <p id="special-paragraph">This is a paragraph with a unique ID.</p>
+
+  <p class="highlight">This paragraph has the highlight class.</p>
+
+  <div>
+    <p>This is a descendant paragraph inside a div.</p>
+  </div>
+
+  <ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+  </ul>
+
+  <h2>Subheading</h2>
+  <p>This paragraph is right after an h2 tag (adjacent sibling).</p>
+
+  <div class="box">I am a div with class 'box'</div>
+  <p>This is a general sibling of .box</p>
+  <p>Another general sibling of .box</p>
+
+  <input type="text" placeholder="Name">
+  <input type="password" placeholder="Password">
+
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+
+  <a href="#">Hover over this link</a>
+
+</body>
+</html>
