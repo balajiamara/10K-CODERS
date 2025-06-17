@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Catering</title>
+    <style>
+        body{
+            overflow-x: hidden;
+            /* margin-left: 10px; */
+        }
+        *{
+            margin-top: 0px;
+        }
+        .nav{
+            position:fixed;
+            z-index:1;
+            width:100%;
+            height:50px;
+            background-color:white;  
+            margin-top: 0px;  
+            box-shadow:3px 3px 5px silver ;        
+        }
+        .nav a{
+         color:black;
+         text-decoration: none;
+            
+        }
+        .nav-a{
+            float:right;
+            margin-right:50px;
+            font-size:large;
+            padding:10px;
+        }
+        .logo{
+            float:left;
+            font-size:x-large;
+            padding:10px;
+        }
+        /* img{
+            width: 100%;
+        } */
+        .burger{
+            display: flex;
+            position: relative;
+            display: flex;
+            justify-content: start;
+            align-items: end;
+        }
+         
+        .le{
+            display: flex;
+            position: absolute;
+            text-align: end;
+            letter-spacing: 3px;
+            padding: 10px;
+            margin: 20px;
+            font-size:xx-large;
+            color: gray;
+        }
+        .second{
+            display: flex;
+            padding: 10px;
+            margin: 20px 230px;
+        }
+        .about{
+            letter-spacing: 2px;
+            padding: 50px;
+            align-items: center;
+            font-size: large;
+            
+        }
+        .third{
+            display: flex;
+            margin: 20px 220px;
+            padding:20px;
+            width: 1000px;
+        }
+        .third div{
+            padding: 50px;
+            /* width:50%;
+            background-color: blue; */
+        }
+        .sec-con{
+            /* display: flex; */
+            margin-top: 50px;
+            font-size: large;
+        }
+        .gp{
+            color: gray;
+        }
+        .third>h1,h3{
+            letter-spacing: 1px;
+        }
+        .sec-con>p{
+            color:grey ;
+        }
+        input{
+            width: 100%;
+            height: 25px;
+            border: none;
+            /* margin-left: 50px;
+            margin-right: 50px; */
+        }
+        /* hr{
+            margin-left: 50px;
+            margin-right: 50px;
+        } */
+        .fourth{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .foot{
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 30px;
+            
+        }
+        .foot a{
+            text-decoration: none;
+            color: white;
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <div class="nav">
+            <a href="#" class="logo">Gaurmet au catering</a>
+            <a href="#contact" class="nav-a">Contact</a>
+            <a href="#menu" class="nav-a">Menu</a>
+            <a href="#about" class="nav-a">About</a>
+        </div>
+        <div class="burger">
+            <div >
+                <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="">
+            </div>
+            <div class="le">
+                Le Catering
+            </div>
+        </div>
+        <div class="second">
+            <div class="sec-img">
+                <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="" height="600px">
+            </div>
+            <div class="about" id="about">
+                <h1 style="text-align: center;">About Catering</h1>
+                <h4 style="text-align: center;">Tradition since 1889</h4>
+                <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+                <p class="gp">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="third">
+            <div class="sec-con" id="menu">
+                <h1>Our Menu</h1>
+                <h3>Bread Basket</h3>
+                <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                <h3>Honey Almond Granola with Fruits</h3>
+                <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                <h3>Belgian Waffle</h3>
+                <p>Vanilla flavored batter with malted flour 7.50</p>
+                <h3>Scrambled eggs</h3>
+                <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                <h3>Blueberry Pancakes</h3>
+                <p>With syrup, butter and lots of berries 8.50</p>
+            </div>
+            <div>
+                <img src="https://www.w3schools.com/w3images/tablesetting.jpg" alt="" height="600px">
+            </div>
+        </div>
+        <hr about>
+        <div class="fourth" id="contact">
+            <h1>Contact</h1>
+            <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+            <h3>Catering Service, 42nd Living St, 43043 New York, NY</h3>
+            <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+            <form>
+                <input type="text" placeholder="Name"><br><br><hr>
+                <input type="text" placeholder="How many people"><br><br><hr>
+                <input type="text" placeholder="Date and Time"><br><br><hr>
+                <input type="text" placeholder="Message/Special requirements"><br><br><hr>
+            </form>
+        </div>
+        <footer class="foot">
+            Powered by <a href="www.linkedin.com/in/balaji-amara-4a7061297">@Balu</a>
+        </footer>
+    </div>
+</body>
+</html>
