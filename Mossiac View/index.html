@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mosaic View</title>
+  <style>
+    body {
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* justify-con: center; */
+    }
+
+    h1 {
+      text-align: center;
+      margin: 40px 0 20px;
+      color: #333;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-shadow: 2px 2px 4px rgba(202, 29, 29, 0.4);
+    }
+
+    .mosaic-grid {
+      display: grid;
+      grid-template-columns: repeat(6,1fr);
+      grid-auto-rows: 150px;
+      gap: 30px;
+      /* max-width: 1000px; */
+      width: 100%;
+      /* height: 200vh; */
+      padding: 10px;
+      border-radius: 82px;
+      /* margin-left: 80px; */
+      /* background-color: black; */
+      overflow: hidden;
+      justify-items: center;
+    }
+    /* img{
+      width: 100%;
+      height: 100%;
+    } */
+    .mosaic-grid img {
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+      /* border-radius: 12px; */
+      display: block;
+    }
+
+    /* Optional: Make some images span more rows/columns */
+    /* .mosaic-grid img.wide {
+      grid-column: span 2;
+    }
+
+    .mosaic-grid img.tall {
+      grid-row: span 2;
+    }
+
+    .mosaic-grid img.big {
+      grid-column: span 2;
+      grid-row: span 2;
+    } */
+    .mosaic-grid>#img1{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    .mosaic-grid>#img2{
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+    .mosaic-grid>#img3{
+        grid-column: 3/5;
+        grid-row: 1/3;
+    }
+    .mosaic-grid>#img4{
+        grid-column: 4/6;
+        grid-row: 1/3;
+    }
+    .mosaic-grid>#img5{
+        grid-column: 5/7;
+        grid-row: 1/4;
+    }
+    .mosaic-grid>#img6{
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+    .mosaic-grid>#img7{
+        grid-column: 2/4;
+        grid-row: 2/4;
+    }
+    .mosaic-grid>#img8{
+        grid-column: 3/5;
+        grid-row: 3/6;
+    }
+    .mosaic-grid>#img9{
+        grid-column: 4/6;
+        grid-row: 3/5;
+    }
+    .mosaic-grid>#img10{
+        grid-column: 1/3;
+        grid-row: 5/9;
+    }
+    /* .mosaic-grid>#img11{
+        grid-column: 1/3;
+        grid-row: 5/7;
+    } */
+    .mosaic-grid>#img11{
+        grid-column: 2/4;
+        grid-row: 4/10;
+    }
+    .mosaic-grid>#img12{
+        grid-column: 3/5;
+        grid-row: 6/11;
+    }
+    .mosaic-grid>#img13{
+        grid-column: 4/6;
+        grid-row: 5/8;
+    }
+    .mosaic-grid>#img14{
+        grid-column: 5/7;
+        grid-row: 4/9;
+    }
+    .mosaic-grid>#img15{
+        grid-column:1/3 ;
+        grid-row: 9/11;
+    }
+    .mosaic-grid>#img16{
+        grid-column:2/4 ;
+        grid-row: 10/11;
+    }
+    .mosaic-grid>#img17{
+        grid-column:4/6 ;
+        grid-row: 8/11;
+    }
+    .mosaic-grid>#img18{
+        grid-column:5/7 ;
+        grid-row: 9/11;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mosaic View</h1>
+
+  <div class="mosaic-grid">
+    <img src="https://sulthansbiriyani.in/wp-content/uploads/2022/11/Tandoori-chicken-1.jpg" class="" id="img1" alt="">
+    <img src="https://thumbs.dreamstime.com/z/indian-non-veg-food-chicken-tandoori-one-best-fast-india-174404914.jpg" id="img2" alt="">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.Y1y304qKgI8wwfyMcVbmsgHaEK?pid=Api&P=0&h=220" id="img3" alt="">
+    <img src="https://prod-c2i.s3.amazonaws.com/articles/147746668858105a404544d.jpg" id="img4" alt="">
+    <img src="https://curlytales.com/wp-content/uploads/2020/09/Untitled-51-min.png" class="" id="img5" alt="">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.5eoT8wNta2GV-LDA7lq_CAHaHa?pid=Api&P=0&h=220" id="img6" alt="">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.FMun8hrgbZCF-G1NcL3xmgHaFf?pid=Api&P=0&h=220" id="img7" alt="">
+    <img src="https://en.petitchef.com/imgupl/recipe/grilled-jumbo-prawns--lg-136279p204981.jpg" id="img8" alt="">
+    <img src="https://diethood.com/wp-content/uploads/2021/02/lobster-tails-12-1024x1536.jpg" id="img9" alt="">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.tMUxsjHg1oXjag3ibl09EgHaFI?pid=Api&P=0&h=220" id="img10" alt="">
+    <img src="https://images.picxy.com/cache/2020/2/14/882e672f3ae08862880854b81d93a7a4.jpg" id="img11">
+    <img src="https://www.thecookierookie.com/wp-content/uploads/2023/06/Garlic-Herb-Grilled-Chicken-6-edited.jpg" id="img12" alt="">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.FuuyRNakjEIWwjwxiDccagHaEc?pid=Api&P=0&h=220" id="img13" alt="">
+    <img src="https://i.pinimg.com/originals/aa/41/88/aa418831721a3dbde8436f064a4a9297.png" class="tall" id="img14" alt="">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.V0GGziDc55Eh2QjTxQvddwHaE8?pid=Api&P=0&h=220" id="img15" alt="">
+    <img src="https://vismaifood.com/storage/app/uploads/public/c0d/434/20d/thumb__700_0_0_0_auto.jpg" id="img16" alt="">
+    <img src="https://img.freepik.com/premium-photo/chicken-tangdi-kabab-is-delicious-melt-mouth-appetizer-prepared-by-soft-moist-chicken-marinated-aromatic-indian-spices-selective-focus_726363-510.jpg?w=2000" id="img17" alt="">
+    <img src="https://i.pinimg.com/originals/25/e5/70/25e570cc86b80da4f37980235370beb7.jpg" id="img18" alt="">
+    
+  </div>
+
+</body>
+</html>
